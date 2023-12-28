@@ -150,11 +150,11 @@ We compared with different baseline models and their experimental results are as
 | Meta-MGNN    | 82.97±0.10     | 82.13±0.13     | 75.43±0.21     | 73.36±0.32     | 68.99±1.84     | 65.54±2.13     | -              | -              |
 | Pre-PAR      | 84.93±0.11     | 83.01±0.09     | 78.08±0.16     | 74.46±0.29     | 69.96±1.37     | 66.94±1.12     | 75.12±0.84     | 73.63±1.00     |
 | HSL-RG       | **85.56±0.28** | 84.09±0.20     | 78.99±0.33     | 77.53±0.41     | 71.26±1.08     | 68.76±1.05     | **76.00±0.81** | 74.40±0.82     |
-| **PG-DERN**  | 85.25±0.29     | **84.12±0.08** | **79.62±0.32** | **77.69±0.38** | **71.62±0.33** | **70.48±0.73** | 75.24±0.37     | **74.56±0.18** |
+| **PG-DERN**  | 85.25±0.29     | **84.12±0.08** | **79.62±0.32** | **77.69±0.38** | **71.62±0.33** | **69.65±1.02** | 75.24±0.37     | **74.56±0.18** |
 
 ## NoteBooks
 
-To ensure transparency of the experimental results, all models trained on the dataset as well as the predictions of the models have been uploaded to Zenodo. Additionally, in order to present the results of the experiments in a more intuitive way, we provide a comprehensive Jupyter notebook in our repository, where we load all the prediction result files and visualize these results in the form of statistical charts. 
+To ensure transparency of the experimental results, all models trained on the dataset as well as the predictions of the models have been uploaded to [Zenodo](https://github.com/Bombtsti/PG-DERN). Additionally, in order to present the results of the experiments in a more intuitive way, we provide a comprehensive Jupyter notebook in our repository, where we load all the prediction result files and visualize these results in the form of statistical charts. 
 
 ## References
 
