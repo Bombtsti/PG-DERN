@@ -1,0 +1,24 @@
+FROM continuumio/anaconda3:latest
+MAINTAINER 2502146872@qq.com
+
+ARG env_name=pgdern
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /media/pgdern
+
+COPY . ./
+
+RUN conda create -n $env_name python==3.7.16 \
+&& source deactivate \
+&& conda activate $env_name \
+&& pip install torch==1.7.0+cu110 torchvision==0.8.0+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html \
+&& pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com \
+&& pip install torch_scatter==2.0.7 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html \
+&& pip install torch_sparse==0.6.9 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html \
+&& pip install torch_geometric==1.7.0
+
+RUN echo "source activate $env_name" > ~/.bashrc
+ENV PATH /opt/conda/envs/$env_name/bin:$PATH
+
+CMD ["/bin/bash","inference.sh"]
