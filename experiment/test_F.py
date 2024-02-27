@@ -14,7 +14,7 @@ rootPath = 'ablation/'
 # ablation 1
 
 list = []
-for i in range(0,21,5):
+for i in range(5):
     file = rootPath+'n3-{}.txt'.format(i)
     l = []
     # cout = [100,150,200,300,400,500]
@@ -32,7 +32,7 @@ a1 = np.array(list,dtype=float)
 mean_a1 = np.mean(a1,axis=0)
 
 list = []
-for i in range(0,21,5):
+for i in range(5):
     file = rootPath+'s{}.txt'.format(i)
     l = []
     # cout = [i for i in range(0,501,50)]
@@ -51,7 +51,7 @@ mean_a2 = np.mean(a2,axis=0)
 
 
 list = []
-for i in range(0,21,5):
+for i in range(5):
     file = rootPath+'g{}.txt'.format(i)
     l = []
     # cout = [i for i in range(0,501,50)]
@@ -101,7 +101,7 @@ plt.savefig(rootPath+'ablation1.png')
 
 
 # list = []
-# for i in range(0,21,5):
+# for i in range(5):
 #     file = rootPath+'n3-{}.txt'.format(i)
 #     l = []
 #     # cout = [100,150,200,300,400,500]
@@ -119,7 +119,7 @@ plt.savefig(rootPath+'ablation1.png')
 # mean_a1 = np.mean(a1,axis=0)
 #
 # list = []
-# for i in range(0,21,5):
+# for i in range(5):
 #     file = rootPath+'d{}.txt'.format(i)
 #     l = []
 #     # cout = [i for i in range(0,501,50)]
