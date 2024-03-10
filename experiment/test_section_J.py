@@ -106,13 +106,9 @@ def painting(y_score,q_feats,sider_y_true,sider_q_feats,eval_q_feats):
     # plt.title('t-SNE Visualization with Predicted Probabilities')
     # plt.show()
     plt.savefig('Probability.png')
-def test1():
-    pos_list = [1714, 1707, 1719, 1704, 1712, 1711, 1705, 1708, 1715, 1717, 1713]
-    for i in range(11):
-        pos_list[i] = pos_list[i]-1704
-    print(pos_list)
-    # 10, 3, 15, 0, 8, 7, 1, 4, 11, 13, 9
+
 # if __name__ == '__main__':
+    # 1
     # root_dir = '.'
     # args = get_args(root_dir)
     # #
@@ -128,6 +124,7 @@ def test1():
     # # torch.save(y_true, 'eval_y_true.pt')
     # torch.save(q_feats, 'eval_q_feats.pt')
 
+    # 2
     # y_score = torch.load('y_score.pt')
     # q_feats = torch.load('q_feats.pt')
     # sider_y_true = torch.load('sider_y_true.pt')
@@ -135,4 +132,4 @@ def test1():
     # eval_q_feats = torch.load('eval_q_feats.pt')
     # painting(y_score,q_feats,sider_y_true,sider_q_feats,eval_q_feats)
 
-    # test1()
+ 
